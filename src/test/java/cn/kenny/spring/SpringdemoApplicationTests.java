@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.util.Arrays;
+
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class SpringdemoApplicationTests {
@@ -31,6 +33,15 @@ public class SpringdemoApplicationTests {
 		System.out.println("价格为：" + platinum);
 		double other = saleCountService.countPrice(100, "other");
 		System.out.println("价格为：" + other);
+
+
+		String separator = ",";
+		String[] sss = {"a","b","c"};
+//		Arrays.asList( "a", "b", "d" ).forEach(
+//				( String e ) -> System.out.print( e + separator ) );
+//		System.out.println("2".compareTo("2"));
+
+		Arrays.asList(sss).forEach(( String e ) -> System.out.print( e + separator ) );
 
 	}
 

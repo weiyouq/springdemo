@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
  * @created 2019/9/11 11:52
  */
 @Component
-@EnableAsync
+@EnableAsync//Enables Spring's asynchronous method execution capability
 public class SpringContextUtils implements ApplicationContextAware {
     private static ApplicationContext applicationContext; // Spring应用上下文环境
 
@@ -21,7 +21,8 @@ public class SpringContextUtils implements ApplicationContextAware {
         SpringContextUtils.applicationContext = applicationContext;
     }
 
-    public static<T> T getBean(Class<T> requireType){
+    public static<T> T getBean(Class<T> requireType)
+    {
         return (T)applicationContext.getBean(requireType);
     }
 
