@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
  * @created 2019/9/11 11:52
  */
 @Component
-@EnableAsync//Enables Spring's asynchronous method execution capability
+@EnableAsync//Enables Spring's asynchronous method execution capability开启spring异步执行方法的能力
 public class SpringContextUtils implements ApplicationContextAware {
     private static ApplicationContext applicationContext; // Spring应用上下文环境
 

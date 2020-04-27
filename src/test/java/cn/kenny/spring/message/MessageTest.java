@@ -12,8 +12,8 @@ import org.springframework.test.context.junit4.SpringRunner;
  * @author kenny_peng
  * @created 2019/9/11 13:11
  */
-//@RunWith(SpringRunner.class)
-//@SpringBootTest
+@RunWith(SpringRunner.class)
+@SpringBootTest
 public class MessageTest {
 
     @Autowired

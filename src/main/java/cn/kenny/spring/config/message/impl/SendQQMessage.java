@@ -15,6 +15,7 @@ import org.springframework.stereotype.Component;
 public class SendQQMessage implements ApplicationListener<MessageEvent> {
     @Override
     public void onApplicationEvent(MessageEvent event) {
-        System.out.println("发送qq消息成功");
+        Object source = event.getSource();
+        System.out.println("发送qq消息成功:" + source);
     }
 }

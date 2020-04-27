@@ -15,6 +15,6 @@ import org.springframework.stereotype.Component;
 public class SendWeChatMessage implements ApplicationListener<MessageEvent> {
     @Override
     public void onApplicationEvent(MessageEvent event) {
-        System.out.println("发送微信消息成功");
+        System.out.println("发送微信消息成功:" + event.getSource());
     }
 }
