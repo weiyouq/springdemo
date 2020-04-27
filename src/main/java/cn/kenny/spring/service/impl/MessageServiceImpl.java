@@ -3,8 +3,6 @@ package cn.kenny.spring.service.impl;
 import cn.kenny.spring.config.SpringContextUtils;
 import cn.kenny.spring.config.message.MessageEvent;
 import cn.kenny.spring.service.IMessageService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Service;
 
 /**
